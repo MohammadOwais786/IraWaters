@@ -1802,14 +1802,14 @@ form label {
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"] i {
   font-size: 24px;
-  background: #f54c53 !important;
+  background: rgba(255, 255, 255, 0.15) !important;
   padding: 12px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"]:hover i, .owl-theme .owl-controls .owl-nav [class*="owl-"]:focus i {
-  background: #f54c53 !important;
+  background: #66d37e !important;
 }
 
 .owl-theme .owl-dots {
