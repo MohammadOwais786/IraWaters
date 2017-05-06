@@ -93,7 +93,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .gtco-top {
-  height: 50px;
+  height: 70px;
   line-height: 50px;
   background: #fff;
   z-index: 1002;
@@ -117,11 +117,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-top .gtco-social-top {
   padding: 0;
-  margin: 0;
+  margin-top: 10px;
 }
 @media screen and (max-width: 768px) {
   .gtco-top .gtco-social-top {
-    margin-right: 50px;
+    display: none;
   }
 }
 .gtco-top .gtco-social-top li {
@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .gtco-nav {
   position: absolute;
-  top: 50px;
+  top: 70px;
   left: 0;
   margin: 0;
   padding: 0;
@@ -570,6 +570,8 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
 }
+
+
 .gtco-social-icons li {
   margin: 0;
   padding: 0;
@@ -832,9 +834,9 @@ form label {
   height: 120%;
   background: #f6f9fc;
   width: 100px;
-  -webkit-transform: skewX(-12deg);
-  -moz-transform: skewX(-12deg);
-  transform: skewX(-12deg);
+  -webkit-transform: skewX(-30deg);
+  -moz-transform: skewX(-30deg);
+  transform: skewX(-30deg);
 }
 @media screen and (max-width: 768px) {
   .flex-section .flex-img:before {
