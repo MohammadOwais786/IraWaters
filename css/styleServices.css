@@ -307,13 +307,13 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .gtco-staff {
   text-align: center;
-  margin-bottom: 7em;
+  margin-bottom: 1em;
   float: left;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
   .gtco-staff {
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
 }
 .gtco-staff img {
@@ -329,6 +329,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 5px;
 }
 .gtco-staff p {
+    text-align: left;
   margin-bottom: 30px;
 }
 .gtco-staff .role {
@@ -465,7 +466,7 @@ service-features-2,
 #gtco-footer,
 #gtco-faq,
 .gtco-section {
-  padding: 7em 0;
+  padding: 3em 0;
   clear: both;
   position: relative;
 }
@@ -515,7 +516,6 @@ service-features-2 {
 .feature-center .icon {
   width: 90px;
   height: 90px;
-  border: 1px solid #eaeaea;
   display: table;
   text-align: center;
   margin: 0 auto 30px auto;
@@ -550,32 +550,32 @@ service-features-2 {
 .feature-left .icon {
   float: left;
   text-align: center;
-  width: 15%;
+  width: 10%;
 }
 .feature-left .icon i {
   display: table-cell;
   vertical-align: middle;
-  font-size: 30px !important;
+  font-size: 20px !important;
   color: #00B906;
 }
 .feature-left .feature-copy {
   float: right;
-  width: 85%;
+  width: 90%;
 }
 .feature-left .feature-copy h3 {
   font-size: 18px;
   color: #1a1a1a;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .service-heading {
-  margin-bottom: 5em;
-  margin-top: 3em;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 @media screen and (max-width: 768px) {
   .service-heading {
-    margin-top: 3em;
-    margin-bottom: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 }
 .service-heading.service-heading-sm {

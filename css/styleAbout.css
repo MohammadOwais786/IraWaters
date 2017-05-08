@@ -582,7 +582,7 @@ form label {
 #gtco-subscribe,
 #gtco-footer,
 .gtco-section {
-  padding: 3em 0;
+  padding: 3em 0 !important;
   clear: both;
 }
 @media screen and (max-width: 768px) {
@@ -593,7 +593,7 @@ form label {
   #gtco-subscribe,
   #gtco-footer,
   .gtco-section {
-    padding: 3em 0;
+    padding: 3em 0 !important;
   }
 }
 
@@ -655,37 +655,44 @@ form label {
 .feature-left:last-child {
   margin-bottom: 0;
 }
-.feature-left .icon {
+.feature-left .icon1 {
   float: left;
-  margin-right: 5%;
+  margin-right: 2%;
   display: table;
-  text-align: center;
+  width:5%;
 }
 @media screen and (max-width: 768px) {
   .feature-left .icon {
     margin-right: 5%;
   }
 }
-.feature-left .icon i {
+.feature-left .icon1 i {
   display: table-cell;
   vertical-align: middle;
-  font-size: 30px;
-  color: #F85A16;
+  color:#fff;
+  font-size:30px;
+  
 }
-.feature-left .feature-copy {
+.feature-left .feature-copy1 {
   float: left;
-  width: 80%;
+  width: 75%;
 }
 @media screen and (max-width: 768px) {
-  .feature-left .feature-copy {
+  .feature-left .feature-copy1 {
     width: 70%;
     float: left;
   }
 }
-.feature-left .feature-copy h3 {
+.feature-left .feature-copy1 h3 {
   font-size: 18px;
   color: #5d5d5d;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  font-weight:bold;
+}
+.feature-left .feature-copy1 p {
+  font-size: 18px;
+  color: #5d5d5d;
+  margin-bottom: 30px;
 }
 
 .gtco-heading {
@@ -762,7 +769,7 @@ form label {
 
 .gtco-tabs .gtco-tab-nav {
   clear: both;
-  margin: 0 0 3em 0;
+  margin: 0 0 1em 0;
   padding: 3px;
   float: left;
   width: 100%;
@@ -776,7 +783,7 @@ form label {
   float: left;
   margin: 0;
   padding: 0;
-  width: 25%;
+  width: 33.3%;
   text-align: center;
   list-style: none;
   display: -moz-inline-stack;
@@ -802,12 +809,12 @@ form label {
 }
 .gtco-tabs .gtco-tab-nav li.active a {
   background: #fff;
-  color: #F85A16;
+  color: #337ab7;
 }
 .gtco-tabs .gtco-tab-content-wrap {
   clear: both;
   position: relative;
-  top: 70px;
+  top: 30px;
 }
 .gtco-tabs .gtco-tab-content-wrap .tab-content {
   position: absolute;

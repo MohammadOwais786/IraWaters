@@ -456,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-counters,
 #fh5co-pricing,
 #fh5co-blog {
-  padding: 4em 0;
+  padding: 2em 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-services,
@@ -866,7 +866,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .fh5co-counters {
-  padding: 3em 0;
+  padding: 0 0;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
