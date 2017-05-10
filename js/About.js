@@ -287,17 +287,17 @@
 
 
 	$(function(){
-		mobileMenuOutsideClick();
-		offcanvasMenu();
-		burgerMenu();
-		contentWayPoint();
-		dropdown();
+		//mobileMenuOutsideClick();
+		//offcanvasMenu();
+		//burgerMenu();
+		//contentWayPoint();
+		//dropdown();
 		testimonialCarousel();
 		tabs();
-		goToTop();
-		loaderPage();
-		counterWayPoint();
-		stickyBanner();
+		//goToTop();
+		//loaderPage();
+		//counterWayPoint();
+		//stickyBanner();
 	});
 
 
