@@ -1412,3 +1412,22 @@ h1, h2, h3, h4, h5, h6 {
   background: #f2f2f2 !important;
 }
 /*# sourceMappingURL=style.css.map */
+
+.project_container{
+  max-width: 100% !important;
+}
+
+.project_row{
+      background: url(./images/project_img.jpg);
+}
+
+.project_white_bck{
+  background-color: white;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.project_section{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
