@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: #66D37E;
+  color: #92c73e;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #66D37E;
+  color: #92c73e;
   outline: none;
   text-decoration: none;
 }
@@ -71,17 +71,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #66D37E;
+  background: #92c73e;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #66D37E;
+  background: #92c73e;
 }
 
 ::selection {
   color: #fff;
-  background: #66D37E;
+  background: #92c73e;
 }
 
 .gtco-container {
@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 .gtco-top #gtco-logo em {
-  color: #66D37E;
+  color: #92c73e;
 }
 .gtco-top .social-icons {
   text-align: right;
@@ -250,7 +250,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 15px;
 }
 .gtco-nav ul li.has-dropdown .dropdown li a:hover {
-  color: #66D37E;
+  color: #92c73e;
 }
 .gtco-nav ul li.has-dropdown .dropdown li.active > a {
   color: #000 !important;
@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
 }
 .gtco-nav ul li.btn-cta a {
-  color: #66D37E;
+  color: #92c73e;
 }
 .gtco-nav ul li.btn-cta a span {
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -279,10 +279,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .gtco-nav ul li.btn-cta a:hover span {
   background: #fff;
-  color: #66D37E;
+  color: #92c73e;
 }
 .gtco-nav ul li.active > a {
-  color: #66D37E !important;
+  color: #92c73e !important;
 }
 
 #gtco-header {
@@ -352,7 +352,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #gtco-header h1 strong {
   font-weight: 700;
-  color: #66D37E;
+  color: #92c73e;
 }
 @media screen and (max-width: 768px) {
   #gtco-header h1 {
@@ -455,7 +455,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 100%;
 }
 .gtco-cover a {
-  color: #66D37E;
+  color: #92c73e;
 }
 .gtco-cover a:hover {
   color: white;
@@ -586,7 +586,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #66D37E;
+  color: #92c73e;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -704,7 +704,7 @@ form label {
 #gtco-counter .counter {
   font-size: 50px;
   margin-bottom: 10px;
-  color: #66D37E;
+  color: #92c73e;
   font-weight: 100;
   display: block;
 }
@@ -1016,7 +1016,7 @@ form label {
 .feature-center h3 {
   font-size: 22px;
   margin-bottom: 20px;
-  color: #66D37E;
+  color: #92c73e;
   position: relative;
 }
 
@@ -1035,7 +1035,7 @@ form label {
   display: table-cell;
   vertical-align: middle;
   font-size: 40px;
-  color: #66D37E;
+  color: #92c73e;
 }
 .feature-left .feature-copy {
   float: right;
@@ -1123,7 +1123,7 @@ form label {
   height: 46px;
   border: none !important;
   background: #fff;
-  color: #66D37E;
+  color: #92c73e;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -1207,7 +1207,7 @@ form label {
   *display: inline;
 }
 #gtco-footer .footer-logo span {
-  color: #66D37E;
+  color: #92c73e;
 }
 #gtco-footer .copyright {
   color: #b3b3b3;
@@ -1482,21 +1482,21 @@ form label {
 }
 
 .btn-primary {
-  background: #66D37E;
+  background: #13c0d7;
   color: #fff;
-  border: 2px solid #66D37E !important;
+  border: 2px solid #13c0d7 !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #7ad98f !important;
-  border-color: #7ad98f !important;
+  background: #13c0d7 !important;
+  border-color: #13c0d7 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #66D37E;
-  border: 2px solid #66D37E;
+  color: #13c0d7;
+  border: 2px solid #13c0d7;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #66D37E;
+  background: #13c0d7;
   color: #fff;
 }
 
@@ -1648,7 +1648,7 @@ form label {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #66D37E;
+  border-color: #92c73e;
 }
 
 .row-mt-15em {
@@ -1710,7 +1710,7 @@ form label {
   margin-left: 0px;
 }
 .gtco-nav .gtco-contact ul li a i {
-  color: #66D37E;
+  color: #92c73e;
 }
 .gtco-nav .gtco-contact ul li a:hover i {
   color: #fff;
@@ -1811,7 +1811,7 @@ form label {
   transition: 0.5s;
 }
 .owl-theme .owl-controls .owl-nav [class*="owl-"]:hover i, .owl-theme .owl-controls .owl-nav [class*="owl-"]:focus i {
-  background: #66d37e !important;
+  background: #92c73e !important;
 }
 
 .owl-theme .owl-dots {
@@ -1829,7 +1829,7 @@ form label {
 .owl-theme .owl-dots .owl-dot span {
   width: 10px;
   height: 10px;
-  background: #66D37E;
+  background: #92c73e;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -1837,12 +1837,12 @@ form label {
 }
 .owl-theme .owl-dots .owl-dot span:hover {
   background: none;
-  border: 2px solid #66D37E;
+  border: 2px solid #92c73e;
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: none;
-  border: 2px solid #66D37E;
+  border: 2px solid #92c73e;
 }
 
 .gtco-card-item {
@@ -1921,7 +1921,7 @@ form label {
   font-size: 20px;
   font-weight: 400;
   margin: 0 0 10px 0;
-  color: #66D37E;
+  color: #92c73e;
 }
 .gtco-card-item .gtco-text span {
   color: #b3b3b3;
@@ -2012,7 +2012,7 @@ form label {
   border-radius: 5px;
 }
 .price-box.popular {
-  border: 2px solid #66D37E;
+  border: 2px solid #13c0d7;
 }
 .price-box.popular .popular-text {
   top: 0;
@@ -2021,7 +2021,7 @@ form label {
   margin-top: -2em;
   position: absolute;
   padding: 4px 20px;
-  background: #66D37E;
+  background: #92c73e;
   color: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2035,7 +2035,7 @@ form label {
   left: 50%;
   margin-left: -10px;
   border-top: 10px solid black;
-  border-top-color: #66D37E;
+  border-top-color: #92c73e;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
@@ -2127,7 +2127,7 @@ form label {
   to: .2em;
   content: "\e116";
   font-size: 26px;
-  color: #66D37E;
+  color: #92c73e;
 }
 
 /*# sourceMappingURL=style.css.map */
