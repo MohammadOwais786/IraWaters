@@ -1,0 +1,109 @@
+/* SOCIAL LINKS CSS */
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+.social-icons-1 {
+  list-style-type: none;
+  margin: 0 auto 20px;
+  padding: 0;
+  display: table;
+  /*width: 250px;*/
+  /*height: 100px;*/
+}
+
+.tab-1 {
+  margin-right: 10px;
+  border-radius: 0 0 25px 25px;
+  /*float: left;*/
+  display: inline;
+  text-align: center;
+}
+
+.circle-1 {
+  padding: 10px 10px;
+  width: 40px;
+  font-size: 20px;
+  text-align: center;
+  background: transparent;
+  border-radius: 40px;
+  border: solid 1px;
+}
+
+.fa-facebook {
+  color: hsl(221, 44%, 41%);
+  border-color: hsl(221, 44%, 41%);
+}
+
+.fa-facebook:hover {
+  background-color: hsl(221, 44%, 41%);
+}
+
+.fa-twitter {
+  color: hsl(195, 100%, 60%);
+  border-color: hsl(195, 100%, 60%);
+}
+
+.fa-twitter:hover {
+  background-color: hsl(195, 100%, 60%);
+}
+
+.fa-google-plus {
+  color: hsl(7, 71%, 55%);
+  border-color: hsl(7, 71%, 55%);
+}
+
+.fa-google-plus:hover {
+  background-color: hsl(7, 71%, 55%);
+}
+
+.fa-linkedin {
+  color: hsl(199, 85%, 36%);
+  border-color: hsl(199, 85%, 36%);
+}
+
+.fa-linkedin:hover {
+  background-color: hsl(199, 85%, 36%);
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-google-plus:hover, .fa-linkedin:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.screen-reader {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+
+/* SOCIAL LINKS CSS */
+.social-section{
+  margin-top: 139px;
+}
+
+.social-links-txt{
+  text-align: center;
+}
+
+.youtube-videos{
+  margin-top: 60px !important;
+}
+
+.gtco-did-u-know{
+  position: relative;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.gtco-did-u-know-que{
+  padding: 20px;
+  position: relative;
+}
+
+
+.gtco-did-u-know .gtco-did-u-know-que h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.youtube-video{
+  padding: 20px;
+}
