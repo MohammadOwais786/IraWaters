@@ -12,7 +12,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "PT Sans", Arial, serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
@@ -41,7 +41,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-  font-family: "PT Sans", Arial, serif;
+font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #fh5co-header #navbar li a {
-  font-family: "PT Sans", Arial, serif;
+font-family: 'Source Sans Pro', sans-serif;
   color: rgba(0, 0, 0, 0.5);
   position: relative;
   font-size: 16px;
@@ -878,7 +878,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 44px;
   display: block;
   color: rgba(0, 0, 0, 0.7);
-  font-family: "PT Sans", Arial, serif;
+font-family: 'Source Sans Pro', sans-serif;
   width: 100%;
   font-weight: 700;
   margin-bottom: .3em;
