@@ -62,6 +62,41 @@
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+    <!-- Facebook Pixel Code -->
+    <script>
+
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+
+            n.queue = []; t = b.createElement(e); t.async = !0;
+
+            t.src = v; s = b.getElementsByTagName(e)[0];
+
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+
+        fbq('init', '631276840395755');
+
+        fbq('track', 'PageView');
+
+    </script>
+
+    <noscript>
+
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=631276840395755&ev=PageView&noscript=1" />
+
+    </noscript>
+
+    <!-- End Facebook Pixel Code -->
 </head>
 <body>
     <div class="gtco-loader"></div>
@@ -95,44 +130,44 @@
                                     <li class="has-dropdown">
                                         <a>About Us</a>
                                         <ul class="dropdown">
-                                            <li><a href="about.html">Who we are?</a></li>
-                                            <li><a href="#">Team Ira</a></li>
-                                            <li><a href="#">Why Ira?</a></li>
+                                            <li><a href="about.html#WhoWeAre">Who we are?</a></li>
+                                            <li><a href="about.html#ira-team">Team Ira</a></li>
+                                            <li><a href="about.html#why-ira">Why Ira?</a></li>
                                             <li><a href="#verticals">Verticals</a></li>
                                             <li><a href="#partners">Partners</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="#">Services</a>
+                                        <a>Services</a>
                                         <ul class="dropdown">
-                                            <li><a href="Rainwater-Harvesting.html">Rainwater Harvesting</a></li>
-                                            <li><a href="Water-Saving-Aerators.html">Water Saving Aerators</a></li>
-                                            <li><a href="Rainwater-Filters.html">Rainwater Filters</a></li>
-                                            <li><a href="Groundwater-Mapping.html">Groundwater Mapping</a></li>
-                                            <li><a href="Water-Sample-Testing.html">Water Sample Testing</a></li>
+                                            <li><a href="services/Rainwater-Harvesting.html">Rainwater Harvesting</a></li>
+                                            <li><a href="services/Water-Saving-Aerators.html">Water Saving Aerators</a></li>
+                                            <li><a href="services/Rainwater-Filters.html">Rainwater Filters</a></li>
+                                            <li><a href="services/Groundwater-Mapping.html">Groundwater Mapping</a></li>
+                                            <li><a href="services/Water-Sample-Testing.html">Water Sample Testing</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="#">Clients</a>
+                                        <a>Clients</a>
                                         <ul class="dropdown">
                                             <li><a href="#clients">Client Logos</a></li>
                                             <li><a href="#testimonials">Testimonials</a></li>
                                             <li><a href="#">Customer Stories</a></li>
                                             <li><a href="projects.html">Projects</a></li>
-                                            <li><a href="#">Social Good</a></li>
+                                            <li><a href="#Social-Good">Social Good</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="#">Resources</a>
+                                        <a>Resources</a>
                                         <ul class="dropdown">
                                             <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Social</a></li>
+                                            <li><a href="Resources/social.html">Social</a></li>
                                             <li><a href="#">News</a></li>
-                                            <li><a href="Jobs.html">Jobs</a></li>
+                                            <li><a href="Resources/Jobs.html">Jobs</a></li>
                                             <li><a href="#">Blog</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#fh5co-footer">Contact</a></li>
+                                    <li><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -146,7 +181,7 @@
                         <div class="col-md-12 mt-text text-center" data-animate-effect="fadeInUp">
                             <h1>We <strong>Conserve</strong> Rainwater</h1>
                             <h2>We Design and Build Rainwater Harvesting Systems </h2>
-                            <div class="text-center"><a href="Rainwater-Harvesting.html#gtco-services" class="btn btn-primary btn-lg">Compare Plans</a></div>
+                            <div class="text-center"><a href="Services/Rainwater-Harvesting.html#Compare-Plans" class="btn btn-primary btn-lg">Compare Plans</a></div>
                         </div>
                     </div>
                 </div>
@@ -154,7 +189,7 @@
             </header>
 
             <section id="fh5co-explore" data-section="explore">
-                <div class="gtco-section">
+                <div id="Social-Good" class="gtco-section">
                     <div id="fh5co-counter-section" class="fh5co-counters">
                         <div class="container">
                             <div class="row">
@@ -631,7 +666,7 @@
                 <div id="partners" class="fh5co-trusted">
                     <div class="gtco-container">
                         <div class="col-md-12 service-heading text-center">
-                            <h2 class="">Associations &amp; Partnerships</h2>
+                            <h2>Associations &amp; Partnerships</h2>
                             <div class="row">
                                 <div class="col-md-6 col-md-offset-3 subtext to-animate">
                                 </div>
@@ -723,7 +758,7 @@
         </div>
     </div>
     <div id="fh5co-footer" role="contentinfo">
-        <div class="container">
+        <div id="contact" class="container">
             <div class="row">
                 <div class="col-md-4 to-animate">
                     <h3 class="section-title">About Us</h3>
@@ -742,14 +777,14 @@
                     </ul>
                     <h3 class="section-title">Connect with Us</h3>
                     <ul class="social-media">
-                        <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
-                        <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-                        <li><a href="#" class="dribbble"><i class="icon-linkedin"></i></a></li>
-                        <li><a href="#" class="github"><i class="icon-instagram"></i></a></li>
-                        <li><a href="#" class="github"><i class="icon-youtube"></i></a></li>
-                        <li><a href="#" class="github"><i class="icon-vimeo"></i></a></li>
-                        <li><a href="#" class="github"><i class="icon-google"></i></a></li>
-                        <li><a href="#" class="github"><img src="images/jdIcon.png" /></a></li>
+                        <li><a href="https://www.facebook.com/IraWater" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/IraWater " class="twitter"><i class="icon-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/company/ira-sustainable-water-solutions" target="_blank" class="dribbble"><i class="icon-linkedin"></i></a></li>
+                        <li><a href="https://www.instagram.com/irawater/" target="_blank" class="github"><i class="icon-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/c/Irawater" target="_blank" class="github"><i class="icon-youtube"></i></a></li>
+                        <li><a href="https://vimeo.com/irawater/ " target="_blank" class="github"><i class="icon-vimeo"></i></a></li>
+                        <li><a href="https://plus.google.com/+Irawater " target="_blank" class="github"><i class="icon-google"></i></a></li>
+                        <li><a href="https://www.justdial.com/Pune/Ira-Sustainable-Water-Solutions--Mumbai-Banglore-Highway-Baner/020PXX20-XX20-150317124009-H1K5_BZDET " target="_blank" class="github"><img src="images/jdIcon.png" /></a></li>
                     </ul>
                 </div>
                 <div class="col-md-4 to-animate">
