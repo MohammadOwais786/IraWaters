@@ -808,8 +808,8 @@ form label {
   color: #4d4d4d;
 }
 .gtco-tabs .gtco-tab-nav li.active a {
-  background: #fff;
-  color: #337ab7;
+  background: #337ab7;
+  color: #fff;
 }
 .gtco-tabs .gtco-tab-content-wrap {
   clear: both;
