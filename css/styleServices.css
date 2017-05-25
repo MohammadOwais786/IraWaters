@@ -1394,5 +1394,11 @@ service-features-3 .feature.feature-3 .icon {
   color: #fff;
   font-size: 30px;
 }
+#Product-Variants{
+    margin-bottom:-120px !important;
+}
+#Compare-Plans{
+    margin-bottom:-120px !important;
+}
 
 /*# sourceMappingURL=style.css.map */
