@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>IraWater</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="" />
+    <meta name="description" content="Ira is on a mission to conserve water through Rainwater Harvesting and to save water through Water Saving Aerators. Headquartered in Pune." />
     <meta name="keywords" content="rainwater harvesting, rainwater collection, rainwater filteration, water conservation, how to save water, how to conserve water, ways to conserve water, ways to save water, groundwater, groundwater extraction, rainwater harvest, water harvest, storm harvest, rain harvest, water table, water table, importance of water, water supply, water management, water service, water sources, Drinkwater, water saving aerators, neoperl in india, water testing, water test lab" />
     <meta name="author" content="" />
 
@@ -49,12 +49,67 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 
+    <!-- Favicons  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- google recaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <!-- Modernizr JS -->
     <script src="../js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
-    <script src="../js/respond.min.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
+    <!-- Facebook Pixel Code -->
+    <script>
+
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+
+            n.queue = []; t = b.createElement(e); t.async = !0;
+
+            t.src = v; s = b.getElementsByTagName(e)[0];
+
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+
+        fbq('init', '631276840395755');
+
+        fbq('track', 'PageView');
+
+    </script>
+
+    <noscript>
+
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=631276840395755&ev=PageView&noscript=1" />
+
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 
 </head>
 <body>
@@ -121,7 +176,7 @@
                                         <ul class="dropdown">
                                             <li><a href="../Resources/faq.html">FAQ</a></li>
                                             <li><a href="../Resources/social.html">Social</a></li>
-                                            <li><a href="../News.html">News</a></li>
+                                            <li><a href="../Resources/News.html">News</a></li>
                                             <li><a href="../Resources/Jobs.php">Jobs</a></li>
                                             <li><a href="../Resources/blog.html">Blog</a></li>
                                         </ul>
@@ -369,9 +424,9 @@
                 </div>
             </div>
             <div id="fh5co-footer" role="contentinfo">
-                <div class="container">
+                <div id="contact" class="container">
                     <div class="row">
-                        <div class="col-md-4 ">
+                        <div class="col-md-4">
                             <h3 class="section-title">About Us</h3>
                             <p>Ira Sustainable Water Solutions is on a mission to conserve water through Rainwater Harvesting and to save water through Water Saving Aerators.</p>
                             <p class="copy-right">
@@ -381,27 +436,29 @@
                         <div class="col-md-4 ">
                             <h3 class="section-title">Our Address</h3>
                             <ul class="contact-info">
-                                <li><i class="icon-map-marker"></i>Ira Sustainable Water Solutions B4, 1145 F.C. Road, Model Colony, Above Hotel Shravan, Shivajinagar, Pune India 411016</li>
+                                <li><i class="icon-map-marker"></i>B4, 1145 F.C. Road, Model Colony, Above Hotel Shravan, Shivajinagar, Pune-411016</li>
                                 <li><i class="icon-phone"></i>+91 777 606 3322 | +91 777 606 3344</li>
-                                <li><i class="icon-envelope"></i><a href="#">info@irawater.com | irasws@gmail.com</a></li>
+                                <li><i class="icon-envelope"></i><a href="#">info@irawater.com</a></li>
                                 <li><i class="icon-globe2"></i><a href="#">www.irawater.com</a></li>
                             </ul>
                             <h3 class="section-title">Connect with Us</h3>
                             <ul class="social-media">
-                                <li><a href="#" class="facebook"><i class="icon-facebook"></i></a></li>
-                                <li><a href="#" class="twitter"><i class="icon-twitter"></i></a></li>
-                                <li><a href="#" class="dribbble"><i class="icon-linkedin"></i></a></li>
-                                <li><a href="#" class="github"><i class="icon-instagram"></i></a></li>
-                                <li><a href="#" class="github"><i class="icon-youtube"></i></a></li>
-                                <li><a href="#" class="github"><i class="icon-vimeo"></i></a></li>
+                                <li><a href="https://www.facebook.com/IraWater" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/IraWater " class="twitter"><i class="icon-twitter"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/ira-sustainable-water-solutions" target="_blank" class="dribbble"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/irawater/" target="_blank" class="github"><i class="icon-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/c/Irawater" target="_blank" class="github"><i class="icon-youtube"></i></a></li>
+                                <li><a href="https://vimeo.com/irawater/ " target="_blank" class="github"><i class="icon-vimeo"></i></a></li>
+                                <li><a href="https://plus.google.com/+Irawater " target="_blank" class="github"><i class="icon-google"></i></a></li>
+                                <li><a href="https://www.justdial.com/Pune/Ira-Sustainable-Water-Solutions--Mumbai-Banglore-Highway-Baner/020PXX20-XX20-150317124009-H1K5_BZDET " target="_blank" class="github"><img src="../images/jdIcon.png" /></a></li>
                             </ul>
                         </div>
                         <div class="col-md-4 ">
                             <h3 class="section-title">Drop us a line</h3>
-                            <form class="contact-form">
+                            <form class="contact-form" action="../submit.php" method="POST">
                                 <div class="form-group">
                                     <label for="name" class="sr-only">Name</label>
-                                    <input type="name" class="form-control" id="name" placeholder="Name">
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="sr-only">Email</label>
@@ -409,8 +466,9 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="message" class="sr-only">Message</label>
-                                    <textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
                                 </div>
+                                <div class=" form-group g-recaptcha" data-sitekey="6LfIFSIUAAAAAKliN_BSZeGRhyMjOB8E_r8XTYG9"></div>
                                 <div class="form-group">
                                     <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
                                 </div>
@@ -419,10 +477,9 @@
                     </div>
                 </div>
             </div>
-        </div>
 
     </div>
-
+</div>
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
     </div>
@@ -455,6 +512,20 @@
     <script src="../js/services_main.js"></script>
     <script src="../js/About.js"></script>
     <script src="../js/mainHonest.js"></script>
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-51415314-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+
+
 
 </body>
 </html>

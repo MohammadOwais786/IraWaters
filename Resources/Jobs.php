@@ -221,7 +221,7 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                                             <i class="icon-feather"></i>
                                         </span>
                                         <div class="feature-copy">
-                                            <h3>Internship -MBA</h3>
+                                            <h3>Internship - MBA</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -324,7 +324,7 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
             </div>
 
             <div id="fh5co-footer" role="contentinfo">
-                <div class="container">
+                <div id="contact" class="container">
                     <div class="row">
                         <div class="col-md-4 ">
                             <h3 class="section-title">About Us</h3>
@@ -336,41 +336,43 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                         <div class="col-md-4 ">
                             <h3 class="section-title">Our Address</h3>
                             <ul class="contact-info">
-                                <li><i class="icon-map-marker"></i>Ira Sustainable Water Solutions B4, 1145 F.C. Road, Model Colony, Above Hotel Shravan, Shivajinagar, Pune India 411016</li>
+                                <li><i class="icon-map-marker"></i>B4, 1145 F.C. Road, Model Colony, Above Hotel Shravan, Shivajinagar, Pune-411016</li>
                                 <li><i class="icon-phone"></i>+91 777 606 3322 | +91 777 606 3344</li>
-                                <li><i class="icon-envelope"></i><a href="#">info@irawater.com | irasws@gmail.com</a></li>
+                                <li><i class="icon-envelope"></i><a href="#">info@irawater.com</a></li>
                                 <li><i class="icon-globe2"></i><a href="#">www.irawater.com</a></li>
                             </ul>
                             <h3 class="section-title">Connect with Us</h3>
                             <ul class="social-media">
                                 <li><a href="https://www.facebook.com/IraWater" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
                                 <li><a href="https://twitter.com/IraWater " class="twitter"><i class="icon-twitter"></i></a></li>
-                                <li><a href="https://www.linkedin.com/company/ira-sustainable-water-solutions" class="dribbble"><i class="icon-linkedin"></i></a></li>
-                                <li><a href="https://www.instagram.com/irawater/" class="github"><i class="icon-instagram"></i></a></li>
-                                <li><a href="#" class="github"><i class="icon-youtube"></i></a></li>
-                                <li><a href="#" class="github"><i class="icon-vimeo"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/ira-sustainable-water-solutions" target="_blank" class="dribbble"><i class="icon-linkedin"></i></a></li>
+                                <li><a href="https://www.instagram.com/irawater/" target="_blank" class="github"><i class="icon-instagram"></i></a></li>
+                                <li><a href="https://www.youtube.com/c/Irawater" target="_blank" class="github"><i class="icon-youtube"></i></a></li>
+                                <li><a href="https://vimeo.com/irawater/ " target="_blank" class="github"><i class="icon-vimeo"></i></a></li>
+                                <li><a href="https://plus.google.com/+Irawater " target="_blank" class="github"><i class="icon-google"></i></a></li>
+                                <li><a href="https://www.justdial.com/Pune/Ira-Sustainable-Water-Solutions--Mumbai-Banglore-Highway-Baner/020PXX20-XX20-150317124009-H1K5_BZDET " target="_blank" class="github"><img src="../images/jdIcon.png" /></a></li>
                             </ul>
                         </div>
                         <div class="col-md-4 ">
                             <h3 class="section-title">Drop us a line</h3>
-                            <form class="contact-form" action="./submit.php" method="POST">
-                        <div class="form-group">
-                            <label for="name" class="sr-only">Name</label>
-                            <input type="name" class="form-control" id="name" name="name" placeholder="Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" name="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="sr-only">Message</label>
-                            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message"></textarea>
-                        </div>
-                        <!-- <div class=" form-group g-recaptcha" data-sitekey="6LfIFSIUAAAAAKliN_BSZeGRhyMjOB8E_r8XTYG9"></div> -->
-                        <div class="form-group">
-                            <input type="submit" name="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
-                        </div>
-                    </form>
+                            <form class="contact-form" action="../submit.php" method="POST">
+                                <div class="form-group">
+                                    <label for="name" class="sr-only">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="sr-only">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message" class="sr-only">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
+                                </div>
+                                <div class=" form-group g-recaptcha" data-sitekey="6LfIFSIUAAAAAKliN_BSZeGRhyMjOB8E_r8XTYG9"></div>
+                                <div class="form-group">
+                                    <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -402,5 +404,17 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
     <script src="../js/services_main.js"></script>
     <script src="../js/About.js"></script>
     <script src="../js/mainHonest.js"></script>
+	<script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-51415314-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 </html>
