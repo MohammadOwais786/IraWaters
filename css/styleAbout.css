@@ -1475,5 +1475,13 @@ font-family: 'Source Sans Pro', sans-serif;
 .js .animate-box {
   opacity: 0;
 }
+.input-group-addon,
+input[type=email],
+input[type=submit],
+.modal-content{border-radius:0px
+}
+.modal-dialog{
+    margin: 6em auto;
+}
 
 /*# sourceMappingURL=style.css.map */
