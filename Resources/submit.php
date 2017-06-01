@@ -1,9 +1,18 @@
 <?php
 require 'global_vars.php';
 	$con = connect_2_db();
-if(isset($_POST['submit']))
+if(isset($_POST['submit']) && !empty($_POST['submit']))
 {
-	$name = $_POST['name'];
+	if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response']))
+	{
+		//your site secret key
+        $secret = '6LfYbSIUAAAAAElj1xd337FK6ufmcNHo42nLLyuU';
+        //get verify response data
+        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+        $responseData = json_decode($verifyResponse);
+        if($responseData->success)
+        {
+        	$name = $_POST['name'];
 	$mailid = $_POST['email'];
 	$message = $_POST['message'];
 	// require './phpmailer/PHPMailerAutoload.php';
@@ -32,7 +41,7 @@ if(isset($_POST['submit']))
 	{
 mysqli_query($con, "INSERT INTO message (name, email, message) VALUES('$name', '$mailid', '$message')");
       echo '<script>
-    alert("Uploaded successfully");
+    alert("Mail sent successfully");
     window.location = "Jobs.php"
     </script>';
 	}
@@ -43,6 +52,23 @@ mysqli_query($con, "INSERT INTO message (name, email, message) VALUES('$name', '
     window.location = "Jobs.php"
     </script>';
 	}
+        }
+		else{
+			echo '<script>
+    alert("Robot verification failed, please try again.");
+    window.location = "Jobs.php"
+    </script>';
+		}
+
+	}
+	else
+	{
+		echo '<script>
+    alert("Please click on the reCAPTCHA box.");
+    window.location = "Jobs.php"
+    </script>';
+	}
+	
 }
 
 ?>

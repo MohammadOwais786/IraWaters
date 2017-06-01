@@ -410,27 +410,29 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                                 <li><a href="https://www.justdial.com/Pune/Ira-Sustainable-Water-Solutions--Mumbai-Banglore-Highway-Baner/020PXX20-XX20-150317124009-H1K5_BZDET " target="_blank" class="github"><img src="images/jdIcon.png" style="padding-bottom:8px " /></a></li>
                             </ul>
                         </div>
-                        <div class="col-md-4 to-animate">
+                        <div class="col-md-4 ">
                             <h3 class="section-title">Drop Us a Line</h3>
-                            <form class="contact-form" action="../submit.php" method="POST" >
+                            <form class="contact-form" action="../submit.php" method="POST">
                                 <div class="form-group">
                                     <label for="name" class="sr-only">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="sr-only">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email">
                                 </div>
                                 <div class="form-group">
                                     <label for="message" class="sr-only">Message</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Message/ Phone number"></textarea>
+                                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message/ Phone Number"></textarea>
                                 </div>
-                                <div class=" form-group g-recaptcha" data-sitekey="6LfIFSIUAAAAAKliN_BSZeGRhyMjOB8E_r8XTYG9"></div>
+                                <div class="form-group g-recaptcha" data-sitekey="6LfYbSIUAAAAAAvcnJodJAo1Pusabj0aBJdeV37h"></div>
                                 <div class="form-group">
-                                    <input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
+                                    <input type="submit" name="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
                                 </div>
                             </form>
+
                         </div>
+
                     </div>
                 </div>
             </div>        </div>
