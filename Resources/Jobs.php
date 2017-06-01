@@ -1,5 +1,4 @@
 ﻿<!DOCTYPE html>
-
 <?php
 require 'global_vars.php';
 	$con = connect_2_db();
@@ -10,15 +9,16 @@ if(isset($_POST['submit']))
 	$subject = $_POST['subject'];
 	$message = $_POST['message'];
 	$msg = "Dear, ";
-	$file = $_FILES['file']['name'];	
+	$file = $_FILES['file']['name'];
  $file_loc = $_FILES['file']['tmp_name'];
  $file_size = $_FILES['file']['size'];
  $file_type = $_FILES['file']['type'];
  if($file_type!="application/pdf"){
-   echo '<script>
- alert("Please upload Pdf Only");
- window.location = "Jobs.php"
- </script>';
+   echo '
+<script>
+    alert("Please upload Pdf Only");
+    window.location = "Jobs.php"
+</script>';
  sleep(10);
  die();
  }
@@ -50,26 +50,30 @@ if(isset($_POST['submit']))
 	if($status == "YES")
 	{
 mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VALUES('$name', '$mailid', '$subject', '$message', '$file')");
-      echo '<script>
+      echo '
+<script>
     alert("Uploaded successfully");
     window.location = "Jobs.php"
-    </script>';
+</script>';
 	}
 	else
 	{
-      echo '<script>
+      echo '
+<script>
     alert("Error occurred while uploading. Please try after some time.");
     window.location = "Jobs.php"
-    </script>';
+</script>';
 	}
 	}
  	else
         {
-            ?><script>alert('error while uploading file');</script><?php
+            ?>
+<script>alert('error while uploading file');</script><?php
         }
 }
 
-?><html>
+?>
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -108,14 +112,67 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
     <link rel="stylesheet" href="../css/styleHonest.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/styleServices.css">
+    <!-- Favicons  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- google recaptcha -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <!-- Modernizr JS -->
     <script src="../js/modernizr-2.6.2.min.js"></script>
     <!-- FOR IE9 below -->
     <!--[if lt IE 9]>
-    <script src="../js/respond.min.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
+    <!-- Facebook Pixel Code -->
+    <script>
+
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+
+            n.queue = []; t = b.createElement(e); t.async = !0;
+
+            t.src = v; s = b.getElementsByTagName(e)[0];
+
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+
+        'https://connect.facebook.net/en_US/fbevents.js');
+
+
+        fbq('init', '631276840395755');
+
+        fbq('track', 'PageView');
+
+    </script>
+
+    <noscript>
+
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=631276840395755&ev=PageView&noscript=1" />
+
+    </noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body>
     <div class="gtco-loader"></div>
@@ -128,15 +185,12 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                         <div class="row">
                             <div class="col-md-6 col-xs-6">
                                 <div id="gtco-logo">
-                                    <a href="../index.html">
-                                        <div id="gtco-logo"><a href="../index.html"><img src="../images/logo.png" alt="Partners" class="img-responsive" style="height:65px"></a></div>
-                                    </a>
-                                </div>
+                                    <a href="../index.php"><img src="../images/logo.png" alt="Partners" class="img-responsive" style="height:65px"></a></div>                                                                    
                             </div>
                             <div class="col-md-6 col-xs-6 social-icons">
                                 <ul class="gtco-social-top">
-                                    <li><a href="#"><i class="icon-phone" style="padding-right:10px"></i>+91 777 606 3322</a></li>
-                                    <li><a href="../#"><i class="icon-mail2" style="padding-right:10px"></i>info@irawater.com</a></li>
+                                    <li><i class="icon-phone" style="padding-right:10px"></i>+91 777 606 3322</li>
+                                    <li><i class="icon-mail2" style="padding-right:10px"></i>info@irawater.com</li>
                                 </ul>
                             </div>
                         </div>
@@ -147,14 +201,15 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                         <div class="row">
                             <div class="col-xs-12 text-center menu-1">
                                 <ul>
-                                    <li><a href="../index.html">Home</a></li>
+                                    <li><a href="../index.php">Home</a></li>
                                     <li class="has-dropdown">
-                                        <a href="#">About Us</a>
-                                        <ul class="dropdown">
-                                            <li><a href="../about.html#WhoWeAre">Who we are?</a></li>
-                                            <li><a href="../#gtco-team">Our Team</a></li>
-                                            <li><a href="../about.html#why-ira">Why Ira?</a></li>
-                                            <li><a href="../about.html">Company Profile</a></li>
+                                        <a href="../about.php">About Us</a>
+                                        <ul class="active dropdown">
+                                            <li><a href="../about.php#WhoWeAre">Who we are?</a></li>
+                                            <li><a href="../about.php#ira-team">Team Ira</a></li>
+                                            <li><a href="../about.php#why-ira">Why Ira?</a></li>
+                                            <li><a href="../index.php#verticals">Verticals</a></li>
+                                            <li><a href="../index.php#partners">Partners</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
@@ -170,21 +225,21 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                                     <li class="has-dropdown">
                                         <a href="#">Clients</a>
                                         <ul class="dropdown">
-                                            <li><a href="../index.html#clients">Client Logos</a></li>
-                                            <li><a href="../index.html#testimonials">Testimonials</a></li>
-                                            <li><a href="#">Customer Stories</a></li>
-                                            <li><a href="projects.html">Projects</a></li>
-                                            <li><a href="../index.html#Social-Good">Social Good</a></li>
+                                            <li><a href="../index.php#clients">Client Logos</a></li>
+                                            <li><a href="../index.php#testimonials">Testimonials</a></li>
+                                            <li><a href="../Clients/Customer-Stories.html">Customer Stories</a></li>
+                                            <li><a href="../Clients/projects.html">Projects</a></li>
+                                            <li><a href="../index.php#Social-Good">Social Good</a></li>
                                         </ul>
                                     </li>
-                                    <li class="has-dropdown active">
+                                    <li class="active has-dropdown">
                                         <a href="#">Resources</a>
                                         <ul class="dropdown">
-                                            <li><a href="#">FAQ</a></li>
+                                            <li><a href="faq.html">FAQ</a></li>
                                             <li><a href="social.html">Social</a></li>
-                                            <li><a href="#">News</a></li>
+                                            <li><a href="News.html">News</a></li>
                                             <li><a href="#">Jobs</a></li>
-                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="blog.html">Blog</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#contact">Contact</a></li>
@@ -273,47 +328,47 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                     <div class="row">
                         <div class="col-md-12">
                             <h2 class="text-center service-heading">Enter your Details</h2>
-                            <form action="#" method="POST" enctype="multipart/form-data">
+                            <form action="Jobs.php" method="POST" enctype="multipart/form-data">
                                 <div class="col-md-6">
                                     <div class="row form-group">
                                         <div class="col-md-12">
                                             <label class="sr-only" for="name">Name</label>
-                                            <input type="text" name="name" id="name" class="form-control" placeholder="Your firstname">
+                                            <input type="text" id="name" class="form-control" placeholder="Your firstname">
                                         </div>
 
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-md-12">
                                             <label class="sr-only" for="email">Email</label>
-                                            <input type="text" name="email" id="email" class="form-control" placeholder="Your email address">
+                                            <input type="text" id="email" class="form-control" placeholder="Your email address">
                                         </div>
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-md-12">
                                             <label class="sr-only" for="subject">Subject</label>
-                                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Applying for <job title>">
+                                            <input type="text" id="subject" class="form-control" placeholder="Applying for <job title>">
                                         </div>
                                     </div>
                                     <label class="btn btn-default btn-file">
-                                        Upload Resume<input type="file" name="file" required="required" accept="application/pdf" style="display: none" /></label>
-                                        
+                                        Upload Resume<input type="file" style="display:none;">
+                                    </label>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="row form-group">
                                         <div class="col-md-12">
                                             <label class="sr-only" for="message">Message</label>
-                                            <textarea name="message" name="message" id="message" cols="30" rows="6" class="form-control" placeholder="Write us something"></textarea>
+                                            <textarea name="message" id="message" cols="30" rows="6" class="form-control" placeholder="Write us something"></textarea>
                                         </div>
                                     </div>
-                                    <!-- <div class=" form-group g-recaptcha" data-sitekey="6LfIFSIUAAAAAKliN_BSZeGRhyMjOB8E_r8XTYG9"></div> -->
+                                    <div class=" form-group g-recaptcha" data-sitekey="6LfIFSIUAAAAAKliN_BSZeGRhyMjOB8E_r8XTYG9"></div>
 
 
                                 </div>
                                 <div class="row">
-                                    
+
 
                                     <div class="form-group text-center">
-                                        <input type="submit" name="submit" value="Send Details" class="btn btn-primary">
+                                        <input type="submit" value="Send Details" class="btn btn-primary">
                                     </div>
                                 </div>
                             </form>
@@ -326,20 +381,22 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
             <div id="fh5co-footer" role="contentinfo">
                 <div id="contact" class="container">
                     <div class="row">
-                        <div class="col-md-4 ">
+                        <div class="col-md-4 to-animate">
                             <h3 class="section-title">About Us</h3>
                             <p>Ira Sustainable Water Solutions is on a mission to conserve water through Rainwater Harvesting and to save water through Water Saving Aerators.</p>
+
                             <p class="copy-right">
-                                &copy; 2017 Ira Water <br>All Rights Reserved.
+                                &copy;
+                                <script type="text/javascript">document.write(new Date().getFullYear());</script> Ira Water <br>All Rights Reserved.
                             </p>
                         </div>
-                        <div class="col-md-4 ">
-                            <h3 class="section-title">Our Address</h3>
+                        <div class="col-md-4 to-animate">
+                            <h3 class="section-title">Contact Us</h3>
                             <ul class="contact-info">
                                 <li><i class="icon-map-marker"></i>B4, 1145 F.C. Road, Model Colony, Above Hotel Shravan, Shivajinagar, Pune-411016</li>
                                 <li><i class="icon-phone"></i>+91 777 606 3322 | +91 777 606 3344</li>
-                                <li><i class="icon-envelope"></i><a href="#">info@irawater.com</a></li>
-                                <li><i class="icon-globe2"></i><a href="#">www.irawater.com</a></li>
+                                <li><i class="icon-envelope"></i>info@irawater.com</li>
+                                <li><i class="icon-globe2"></i>www.irawater.com</li>
                             </ul>
                             <h3 class="section-title">Connect with Us</h3>
                             <ul class="social-media">
@@ -349,13 +406,13 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                                 <li><a href="https://www.instagram.com/irawater/" target="_blank" class="github"><i class="icon-instagram"></i></a></li>
                                 <li><a href="https://www.youtube.com/c/Irawater" target="_blank" class="github"><i class="icon-youtube"></i></a></li>
                                 <li><a href="https://vimeo.com/irawater/ " target="_blank" class="github"><i class="icon-vimeo"></i></a></li>
-                                <li><a href="https://plus.google.com/+Irawater " target="_blank" class="github"><i class="icon-google"></i></a></li>
-                                <li><a href="https://www.justdial.com/Pune/Ira-Sustainable-Water-Solutions--Mumbai-Banglore-Highway-Baner/020PXX20-XX20-150317124009-H1K5_BZDET " target="_blank" class="github"><img src="../images/jdIcon.png" /></a></li>
+                                <li><a href="https://plus.google.com/+Irawater " target="_blank" class="github"><img src="images/G+.png" style="padding-bottom:8px; padding-right:-5px;" /></a></li>
+                                <li><a href="https://www.justdial.com/Pune/Ira-Sustainable-Water-Solutions--Mumbai-Banglore-Highway-Baner/020PXX20-XX20-150317124009-H1K5_BZDET " target="_blank" class="github"><img src="images/jdIcon.png" style="padding-bottom:8px " /></a></li>
                             </ul>
                         </div>
-                        <div class="col-md-4 ">
-                            <h3 class="section-title">Drop us a line</h3>
-                            <form class="contact-form" action="../submit.php" method="POST">
+                        <div class="col-md-4 to-animate">
+                            <h3 class="section-title">Drop Us a Line</h3>
+                            <form class="contact-form" action="../submit.php" method="POST" >
                                 <div class="form-group">
                                     <label for="name" class="sr-only">Name</label>
                                     <input type="text" class="form-control" id="name" placeholder="Name">
@@ -366,7 +423,7 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                                 </div>
                                 <div class="form-group">
                                     <label for="message" class="sr-only">Message</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Message/ Phone number"></textarea>
                                 </div>
                                 <div class=" form-group g-recaptcha" data-sitekey="6LfIFSIUAAAAAKliN_BSZeGRhyMjOB8E_r8XTYG9"></div>
                                 <div class="form-group">
@@ -376,8 +433,7 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div>        </div>
     </div>
     <div class="gototop js-top">
         <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
@@ -404,17 +460,18 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
     <script src="../js/services_main.js"></script>
     <script src="../js/About.js"></script>
     <script src="../js/mainHonest.js"></script>
-	<script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-51415314-1', 'auto');
-        ga('send', 'pageview');
+    ga('create', 'UA-51415314-1', 'auto');
+    ga('send', 'pageview');
 
     </script>
+
 </body>
 </html>

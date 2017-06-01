@@ -33,14 +33,14 @@ if(isset($_POST['submit']))
 mysqli_query($con, "INSERT INTO message (name, email, message) VALUES('$name', '$mailid', '$message')");
       echo '<script>
     alert("Uploaded successfully");
-    window.location = "index.html"
+    window.location = "index.php"
     </script>';
 	}
 	else
 	{
       echo '<script>
     alert("Error occurred while sending message. Please try after some time.");
-    window.location = "index.html"
+    window.location = "index.php"
     </script>';
 	}
 }

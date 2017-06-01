@@ -109,7 +109,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6 col-xs-6">
-                                <div id="gtco-logo"><a href="index.html"><img src="images/logo.png" alt="Ira Water" class="img-responsive" style="height:65px"></a></div>
+                                <div id="gtco-logo"><a href="index.php"><img src="images/logo.png" alt="Ira Water" class="img-responsive" style="height:65px"></a></div>
 
                             </div>
                             <div class="col-md-6 col-xs-6 social-icons">
@@ -126,13 +126,13 @@
                         <div class="row">
                             <div class="col-xs-12 text-center menu-1">
                                 <ul>
-                                    <li class="active"><a href="index.html">Home</a></li>
+                                    <li class="active"><a href="index.php">Home</a></li>
                                     <li class="has-dropdown">
                                         <a>About Us</a>
                                         <ul class="dropdown">
-                                            <li><a href="about.html#WhoWeAre">Who we are?</a></li>
-                                            <li><a href="about.html#ira-team">Team Ira</a></li>
-                                            <li><a href="about.html#why-ira">Why Ira?</a></li>
+                                            <li><a href="about.php#WhoWeAre">Who we are?</a></li>
+                                            <li><a href="about.php#ira-team">Team Ira</a></li>
+                                            <li><a href="about.php#why-ira">Why Ira?</a></li>
                                             <li><a href="#verticals">Verticals</a></li>
                                             <li><a href="#partners">Partners</a></li>
                                         </ul>
@@ -163,7 +163,7 @@
                                             <li><a href="Resources/faq.html">FAQ</a></li>
                                             <li><a href="Resources/social.html">Social</a></li>
                                             <li><a href="Resources/News.html">News</a></li>
-                                            <li><a href="Resources/Jobs.html">Jobs</a></li>
+                                            <li><a href="Resources/Jobs.php">Jobs</a></li>
                                             <li><a href="Resources/blog.html">Blog</a></li>
                                         </ul>
                                     </li>
@@ -789,6 +789,17 @@
                 </div>
             </section>
 
+            <?php
+            if(isset($_POST['subscribe']))
+            {
+            $email=$_POST['email'];
+            // header("Location: https://script.google.com/macros/s/AKfycbxV35l_kmI4L2IPilqpCzaUwV_SH19Vyq_ODKOGtCEiX3z3rCE/exec?mail=$email");
+            echo '
+            <script>window.open("https://script.google.com/macros/s/AKfycbxV35l_kmI4L2IPilqpCzaUwV_SH19Vyq_ODKOGtCEiX3z3rCE/exec?sub_mail=' . $email . '");</script>';
+
+            }
+
+            ?>
             <section id="gtco-subscribe">
                 <div class="gtco-container">
                     <div class="row">
@@ -799,7 +810,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <form class="form-inline">
+                            <form class="form-inline" method="POST" action="index.php">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
                                         <label for="email" class="sr-only">Email</label>

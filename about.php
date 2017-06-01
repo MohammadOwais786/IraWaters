@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ira is on a mission to conserve water through Rainwater Harvesting and to save water through Water Saving Aerators. Headquartered in Pune." />
     <meta name="keywords" content="rainwater harvesting, rainwater collection, rainwater filteration, water conservation, how to save water, how to conserve water, ways to conserve water, ways to save water, groundwater, groundwater extraction, rainwater harvest, water harvest, storm harvest, rain harvest, water table, water table, importance of water, water supply, water management, water service, water sources, Drinkwater, water saving aerators, neoperl in india, water testing, water test lab" />
-    <meta name="author" content=""/>
+    <meta name="author" content="" />
 
     <!-- Facebook and Twitter integration -->
     <meta property="og:title" content="" />
@@ -107,15 +107,16 @@
     </noscript>
     <!-- End Facebook Pixel Code -->
     <style>
-        #fh5co-services{
-            padding-top :0px !important;
+        #fh5co-services {
+            padding-top: 0px !important;
         }
-        .fh5co-post p{
+
+        .fh5co-post p {
             color: white !important;
-            font-size:18px !important;
-            
+            font-size: 18px !important;
         }
-        .fh5co-post .icon-circle-check{
+
+        .fh5co-post .icon-circle-check {
             color: white !important;
             font-style: inherit;
         }
@@ -131,7 +132,7 @@
                         <div class="row">
                             <div class="col-md-6 col-xs-6">
                                 <div id="gtco-logo">
-                                    <a href="index.html"><img src="images/logo.png" alt="Partners" class="img-responsive" style="height:65px"></a>
+                                    <a href="index.php"><img src="images/logo.png" alt="Partners" class="img-responsive" style="height:65px"></a>
                                 </div>
                             </div>
                             <div class="col-md-6 col-xs-6 social-icons">
@@ -148,19 +149,19 @@
                         <div class="row">
                             <div class="col-xs-12 text-center menu-1">
                                 <ul>
-                                    <li ><a href="index.html">Home</a></li>
+                                    <li class="active"><a href="index.php">Home</a></li>
                                     <li class="has-dropdown">
-                                        <a href="#">About Us</a>
-                                        <ul class="active dropdown">
-                                            <li><a href="#WhoWeAre">Who we are?</a></li>
-                                            <li><a href="#ira-team">Team Ira</a></li>
-                                            <li><a href="#why-ira">Why Ira?</a></li>
-                                            <li><a href="index.html#verticals">Verticals</a></li>
-                                            <li><a href="index.html#partners">Partners</a></li>
+                                        <a>About Us</a>
+                                        <ul class="dropdown">
+                                            <li><a href="about.php#WhoWeAre">Who we are?</a></li>
+                                            <li><a href="about.php#ira-team">Team Ira</a></li>
+                                            <li><a href="about.php#why-ira">Why Ira?</a></li>
+                                            <li><a href="#verticals">Verticals</a></li>
+                                            <li><a href="#partners">Partners</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="#">Services</a>
+                                        <a>Services</a>
                                         <ul class="dropdown">
                                             <li><a href="Services/Rainwater-Harvesting.html">Rainwater Harvesting</a></li>
                                             <li><a href="Services/Water-Saving-Aerators.html">Water Saving Aerators</a></li>
@@ -170,22 +171,22 @@
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="#">Clients</a>
+                                        <a>Clients</a>
                                         <ul class="dropdown">
-                                            <li><a href="index.html#clients">Client Logos</a></li>
-                                            <li><a href="index.html#testimonials">Testimonials</a></li>
+                                            <li><a href="#clients">Client Logos</a></li>
+                                            <li><a href="#testimonials">Testimonials</a></li>
                                             <li><a href="Clients/Customer-Stories.html">Customer Stories</a></li>
                                             <li><a href="Clients/projects.html">Projects</a></li>
-                                            <li><a href="index.html#Social-Good">Social Good</a></li>
+                                            <li><a href="#Social-Good">Social Good</a></li>
                                         </ul>
                                     </li>
                                     <li class="has-dropdown">
-                                        <a href="#">Resources</a>
+                                        <a>Resources</a>
                                         <ul class="dropdown">
                                             <li><a href="Resources/faq.html">FAQ</a></li>
                                             <li><a href="Resources/social.html">Social</a></li>
                                             <li><a href="Resources/News.html">News</a></li>
-                                            <li><a href="Resources/Jobs.html">Jobs</a></li>
+                                            <li><a href="Resources/Jobs.php">Jobs</a></li>
                                             <li><a href="Resources/blog.html">Blog</a></li>
                                         </ul>
                                     </li>
@@ -196,13 +197,13 @@
                     </div>
                 </nav>
             </div>
-            <div id="gtco-header" data-section="home" class="gtco-cover gtco-cover-sm header-fixed " role="banner" style="background-image:url(images/wideImages/About.jpg);"data-stellar-background-ratio="0.5">
+            <div id="gtco-header" data-section="home" class="gtco-cover gtco-cover-sm header-fixed " role="banner" style="background-image:url(images/wideImages/About.jpg);" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
                 <div class="gtco-container">
                     <div class="row row-mt-15em">
                         <div class="col-md-12 mt-text text-center " data-animate-effect="fadeInUp">
                             <h1><strong>About Us</strong></h1>
-                            <div class="text-center flex-containe"><a data-toggle="modal" data-target="#myModal1" class="btn btn-primary btn-lg" role="button">Download Company Profile</a></div>                           
+                            <div class="text-center flex-containe"><a data-toggle="modal" data-target="#myModal1" class="btn btn-primary btn-lg" role="button">Download Company Profile</a></div>
                         </div>
                     </div>
                 </div>
@@ -215,9 +216,28 @@
                             <h2 class="modal-title" id="myModalLabel" style="color :white">Please enter your mail to Download</h2>
                             <p>We promise we will not spam you.</p>
                         </div>
+                        <?php
+                        if(isset($_POST['subscribe'])&&!empty($_POST['email']))
+                        {
+                        $email=$_POST['email'];
+                        // header("Location: https://script.google.com/macros/s/AKfycbxV35l_kmI4L2IPilqpCzaUwV_SH19Vyq_ODKOGtCEiX3z3rCE/exec?mail=$email");
+                        echo '
+                        <script>window.open("https://script.google.com/macros/s/AKfycbxV35l_kmI4L2IPilqpCzaUwV_SH19Vyq_ODKOGtCEiX3z3rCE/exec?download_mail=' . $email . '");</script>';
+                        // header("Location: images/Ira_Profile_2016.pdf");
+                        echo '
+                        <script type="text/javascript">
+                            function Redirect() {
+                                window.open("./images/Ira_Profile_2016.pdf");
+                            }
+                            setTimeout("Redirect()", 1000);
+                        </script>';
+
+                        }
+
+                        ?>
                         <div class="modal-body">
                             <div class="row">
-                                <form action="#">
+                                <form action="about.php" method="post">
                                     <div class="form-group col-md-12">
                                         <div class="input-group">
                                             <span class="input-group-addon"><i class="icon-envelope"></i></span>
@@ -238,13 +258,13 @@
                     <div class="row ">
                         <div class="col-md-12 col-md-offset-0 text-center service-heading">
                             <h2>Who We Are?</h2>
-                            <p>Ira Sustainable Water Solutions is a leading professional services company in water conservation, helping industries, institutions and individuals conserve water. Our unique consultative approach helps clients envision and achieve their water goals.<br/><br/>Based in Pune since 2012 Ira is working with clients all over India. With over 135 Rainwater Harvesting projects completed Ira has been a catalyst in replenishing groundwater and improving ground water table in Western Maharashtra and Goa.</p>
-                            </div>
+                            <p>Ira Sustainable Water Solutions is a leading professional services company in water conservation, helping industries, institutions and individuals conserve water. Our unique consultative approach helps clients envision and achieve their water goals.<br /><br />Based in Pune since 2012 Ira is working with clients all over India. With over 135 Rainwater Harvesting projects completed Ira has been a catalyst in replenishing groundwater and improving ground water table in Western Maharashtra and Goa.</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="gtco-team" class="gtco-section">
-                <div id="ira-team"class="gtco-container">
+                <div id="ira-team" class="gtco-container">
                     <div class="row ">
                         <div class="col-md-12 col-md-offset-0 text-center service-heading">
                             <h2>Team Ira</h2>
@@ -283,7 +303,7 @@
                 </div>
             </div>
             <div class="gtco-section border-bottom" id="how-it-works" data-section="how-it-works" style="background-color:#f2f2f2;">
-                <div id="why-ira"class="gtco-container">
+                <div id="why-ira" class="gtco-container">
                     <div class="row">
                         <div class="col-md-12 col-md-offset-0 text-center service-heading">
                             <h2>Why Ira</h2>
@@ -340,7 +360,7 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                         </div>
 
                     </div>
@@ -348,8 +368,8 @@
             </div>
             <div id="fh5co-services" data-section="services">
 
-                <div class="core-features" >
-                   
+                <div class="core-features">
+
                     <div class="grid2 to-animate project_row" style="background-image: url(images/ira_car.jpg); background-size:contain; background-repeat: no-repeat;background-position: right;">
                     </div>
                     <div class="grid2" style=" background-color:#13c0d7">
@@ -394,7 +414,7 @@
                 <div class="gtco-container">
                     <div class="col-md-12 col-md-offset-0 text-center service-heading">
                         <h2>What We Seek To Change?</h2>
-                        <p>Water availability is an ongoing issue, which is becoming more complex due to rising demand and depleting supply.<br/>In order to align ourselves to our aim we have identified three key areas to focus on</p>
+                        <p>Water availability is an ongoing issue, which is becoming more complex due to rising demand and depleting supply.<br />In order to align ourselves to our aim we have identified three key areas to focus on</p>
                     </div>
                     <div class="row ">
                         <div class="col-md-4">
@@ -513,15 +533,15 @@
     <script src="js/main.js"></script>
     <script src="js/About.js"></script>
     <script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-51415314-1', 'auto');
-    ga('send', 'pageview');
+        ga('create', 'UA-51415314-1', 'auto');
+        ga('send', 'pageview');
 
     </script>
 
