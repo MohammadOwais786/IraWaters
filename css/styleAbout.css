@@ -413,6 +413,7 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 .gtco-staff p {
   margin-bottom: 30px;
+  font-size: 18px;
 }
 .gtco-staff .role {
   color: #bfbfbf;
@@ -690,6 +691,36 @@ form label {
   font-weight:bold;
 }
 .feature-left .feature-copy1 p {
+  font-size: 18px;
+  color: #5d5d5d;
+  margin-bottom: 30px;
+}
+
+.feature-left .icon i {
+  display: table-cell;
+  vertical-align: middle;
+  color:#fff;
+  font-size:30px;
+  
+}
+.feature-left .feature-copy2 {
+  float: left;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .feature-left .feature-copy2 {
+    width: 90%;
+    padding-left:20px;
+    float: left;
+  }
+}
+.feature-left .feature-copy2 h3 {
+  font-size: 18px;
+  color: #5d5d5d;
+  margin-bottom: 5px;
+  font-weight:bold;
+}
+.feature-left .feature-copy2 p {
   font-size: 18px;
   color: #5d5d5d;
   margin-bottom: 30px;

@@ -42,21 +42,21 @@ if(isset($_POST['submit']))
 mysqli_query($con, "INSERT INTO message (name, email, message) VALUES('$name', '$mailid', '$message')");
       echo '<script>
     alert("Mail sent successfully");
-    window.location = "index.php"
+    window.location = "index.html"
     </script>';
 	}
 	else
 	{
       echo '<script>
     alert("Error occurred while sending message. Please try after some time.");
-    window.location = "index.php"
+    window.location = "index.html"
     </script>';
 	}
         }
 		else{
 			echo '<script>
     alert("Robot verification failed, please try again.");
-    window.location = "index.php"
+    window.location = "index.html"
     </script>';
 		}
 
@@ -65,7 +65,7 @@ mysqli_query($con, "INSERT INTO message (name, email, message) VALUES('$name', '
 	{
 		echo '<script>
     alert("Please click on the reCAPTCHA box.");
-    window.location = "index.php"
+    window.location = "index.html"
     </script>';
 	}
 	

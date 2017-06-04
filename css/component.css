@@ -46,8 +46,7 @@
 }
 
 .grid li {
-	width: 33.33%;
-    height:490px;
+	width: 33.33%;   
 	float: left;
 	cursor: pointer;
 }
@@ -289,7 +288,7 @@ span.nav-close:before {
 
 @media screen and (max-width: 35em) {
 	.grid li {
-		width: 50%;
+		width: 100%;
 	}
 }
 
