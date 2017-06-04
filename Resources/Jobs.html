@@ -130,8 +130,7 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-- google recaptcha -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    
 
     <!-- Modernizr JS -->
     <script src="../js/modernizr-2.6.2.min.js"></script>
@@ -203,7 +202,7 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                                 <ul>
                                     <li><a href="../index.html">Home</a></li>
                                     <li class="has-dropdown">
-                                        <a href="../about.html">About Us</a>
+                                        <a href="#">About Us</a>
                                         <ul class="active dropdown">
                                             <li><a href="../about.html#WhoWeAre">Who We Are?</a></li>
                                             <li><a href="../about.html#ira-team">Team Ira</a></li>
@@ -328,45 +327,42 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                     <div class="row">
                         <div class="col-md-12">
                             <span class="service-heading"><h2 class="text-center">Enter Your Details</h2></span>
-                            <form action="jobs.html" method="POST" enctype="multipart/form-data" style="padding-top: 2em">
+                            <form action="jobs.html" method="POST" enctype="multipart/form-data" style="padding-top: 2em" data-toggle="validator">
                                 <div class="col-md-6">
                                     <div class="row form-group">
                                         <div class="col-md-12">
                                             <label class="sr-only" for="name">Name</label>
-                                            <input type="text" id="name" class="form-control" placeholder="Your Name">
+                                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
                                         </div>
 
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-md-12">
                                             <label class="sr-only" for="email">Email</label>
-                                            <input type="text" id="email" class="form-control" placeholder="Your Email">
+                                            <input type="text" id="email" class="form-control" placeholder="Your Email" required>
                                         </div>
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-md-12">
                                             <label class="sr-only" for="subject">Subject</label>
-                                            <input type="text" id="subject" class="form-control" placeholder="Applying for <Job Title>">
+                                            <input type="text" id="subject" class="form-control" placeholder="Applying for <Job Title>" required>
                                         </div>
                                     </div>
                                     <label class="btn btn-default btn-file">
-                                        Upload Resume<input type="file" style="display:none;">
+                                        Upload Resume<input type="file" style="display:none;" required>
                                     </label>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="row form-group">
                                         <div class="col-md-12">
                                             <label class="sr-only" for="message">Message</label>
-                                            <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Tell us Why You Want to Join Us?"></textarea>
+                                            <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Tell us Why You Want to Join Us?" required></textarea>
                                         </div>
                                     </div>
                                     <div class=" form-group g-recaptcha" data-sitekey="6LfIFSIUAAAAAKliN_BSZeGRhyMjOB8E_r8XTYG9"></div>
 
-
                                 </div>
                                 <div class="row">
-
-
                                     <div class="form-group text-center">
                                         <input type="submit" value="Send Details" class="btn btn-primary">
                                     </div>
@@ -412,18 +408,18 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                         </div>
                         <div class="col-md-4 ">
                             <h3 class="section-title">Drop Us a Line</h3>
-                            <form class="contact-form" action="../submit.php" method="POST">
+                            <form class="contact-form" action="../submit.php" method="POST" data-toggle="validator">
                                 <div class="form-group">
                                     <label for="name" class="sr-only">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="sr-only">Email</label>
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="message" class="sr-only">Message</label>
-                                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message/ Phone Number"></textarea>
+                                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message/ Phone Number" required></textarea>
                                 </div>
                                 <div class="form-group g-recaptcha" data-sitekey="6LfYbSIUAAAAAAvcnJodJAo1Pusabj0aBJdeV37h"></div>
                                 <div class="form-group">
@@ -462,7 +458,9 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
     <script src="../js/services_main.js"></script>
     <script src="../js/About.js"></script>
     <script src="../js/mainHonest.js"></script>
-    <script src="../js/FormValidation.js"></script>
+    <script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
+    <!-- google recaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <script>
     (function (i, s, o, g, r, a, m) {
