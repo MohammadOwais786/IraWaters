@@ -17,7 +17,7 @@ if(isset($_POST['submit']))
    echo '
 <script>
     alert("Please upload Pdf Only");
-    window.location = "Jobs.php"
+    window.location = "jobs.html"
 </script>';
  sleep(10);
  die();
@@ -53,7 +53,7 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
       echo '
 <script>
     alert("Uploaded successfully");
-    window.location = "Jobs.php"
+    window.location = "jobs.html"
 </script>';
 	}
 	else
@@ -61,7 +61,7 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
       echo '
 <script>
     alert("Error occurred while uploading. Please try after some time.");
-    window.location = "Jobs.php"
+    window.location = "jobs.html"
 </script>';
 	}
 	}
@@ -328,7 +328,7 @@ mysqli_query($con, "INSERT INTO resume (name, email, subject, message, file) VAL
                     <div class="row">
                         <div class="col-md-12">
                             <span class="service-heading"><h2 class="text-center">Enter Your Details</h2></span>
-                            <form action="Jobs.php" method="POST" enctype="multipart/form-data" style="padding-top: 2em">
+                            <form action="jobs.html" method="POST" enctype="multipart/form-data" style="padding-top: 2em">
                                 <div class="col-md-6">
                                     <div class="row form-group">
                                         <div class="col-md-12">
