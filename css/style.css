@@ -456,7 +456,8 @@ font-family: 'Source Sans Pro', sans-serif;
 #fh5co-counters,
 #fh5co-pricing,
 #fh5co-blog {
-  padding: 2em 0;
+  padding-top: 2em;
+  padding-bottom:3em;
 }
 @media screen and (max-width: 768px) {
   #fh5co-services,

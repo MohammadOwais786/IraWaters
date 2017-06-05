@@ -313,9 +313,9 @@
                 <div class="gtco-container">
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1 service-heading">
-                            <h2 class="text-center">The Parameters Tested Area</h2>
+                            <h2 class="text-center">The Parameters Tested Are</h2>
                             <div class=" col-md-8 col-md-offset-2 service-heading">
-                                <ol style="font-size: 18px">
+                                <ol style="font-size: 18px; font-style:inherit">
                                     <li><p>Physical/Aesthetic: Colour, Odour and Taste</p></li>
                                     <li><p>Chemical: pH, TDS, Hardness and more</p></li>
                                     <li><p>Biological: Coliform and E Coli Bacteria</p></li>
@@ -567,7 +567,7 @@
                             <h3 class="section-title">Connect with Us</h3>
                             <ul class="social-media">
                                 <li><a href="https://www.facebook.com/IraWater" target="_blank" class="facebook"><i class="icon-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/IraWater " class="twitter"><i class="icon-twitter"></i></a></li>
+                                <li><a href="https://twitter.com/IraWater " class= "twitter" target="_blank"><i class="icon-twitter"></i></a></li>
                                 <li><a href="https://www.linkedin.com/company/ira-sustainable-water-solutions" target="_blank" class="dribbble"><i class="icon-linkedin"></i></a></li>
                                 <li><a href="https://www.instagram.com/irawater/" target="_blank" class="github"><i class="icon-instagram"></i></a></li>
                                 <li><a href="https://www.youtube.com/c/Irawater" target="_blank" class="github"><i class="icon-youtube"></i></a></li>
@@ -578,18 +578,18 @@
                         </div>
                         <div class="col-md-4 ">
                             <h3 class="section-title">Drop Us a Line</h3>
-                            <form class="contact-form" action="../submit.php" method="POST">
+                            <form class="contact-form" action="../submit.php" method="POST" data-toggle="validator">
                                 <div class="form-group">
                                     <label for="name" class="sr-only">Name</label>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="sr-only">Email</label>
-                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="message" class="sr-only">Message</label>
-                                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message/ Phone Number"></textarea>
+                                    <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message/ Phone Number" required></textarea>
                                 </div>
                                 <div class="form-group g-recaptcha" data-sitekey="6LfYbSIUAAAAAAvcnJodJAo1Pusabj0aBJdeV37h"></div>
                                 <div class="form-group">
@@ -635,6 +635,8 @@
     <script src="../js/About.js"></script>
     <script src="../js/mainHonest.js"></script>
     <script src="../js/FormValidation.js"></script>
+    <script src="http://1000hz.github.io/bootstrap-validator/dist/validator.min.js"></script>
+
     <!-- google recaptcha -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
