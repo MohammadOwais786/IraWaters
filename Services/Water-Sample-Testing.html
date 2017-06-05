@@ -403,41 +403,62 @@
                                 <h3 id="myModalLabel" class="modal-title text-center" style="color :white">Book Water Sample Testing</h3>
                             </div>
                             <div class="modal-body" style="border-radius: 0px;">
-                                <form class="form-horizontal col-sm-12 col-md-10 col-md-offset-1">
+                                <form class="form-horizontal col-sm-12 col-md-10 col-md-offset-1" action="./submit.php" method="POST">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group bookNow-element">
                                                 <label>Select Your Package</label>
                                                 <div class="radio-group">
                                                     <label class="radio">
-                                                        <input type="radio" name="radioGroup" id="radio1" value="option1"> ONE-OFF
+                                                        <input type="radio" name="package" id="radio1" value="oneoff"> ONE-OFF
                                                     </label>
                                                     <label class="radio">
-                                                        <input type="radio" name="radioGroup" id="radio2" value="option2"> ANNUAL SUBSCRIPTION
+                                                        <input type="radio" name="package" id="radio2" value="annual"> ANNUAL SUBSCRIPTION
                                                     </label>
                                                     <label class="radio">
-                                                        <input type="radio" name="radioGroup" id="radio3" value="option3"> FLEXI-SUBSCRIBE
+                                                        <input type="radio" name="package" id="radio3" value="flexi"> FLEXI-SUBSCRIBE
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="form-group bookNow-element"><label>Type of Water Sample</label><input class="form-control required" placeholder="Enter Sample Type" data-placement="top" data-trigger="manual" data-content=" Please enter valid Type" type="text"></div>
-                                            <div class="form-group bookNow-element"><label>Name</label><input class="form-control required" placeholder="Your Name" data-placement="top" data-trigger="manual" data-content="Please enter valid name" type="text"></div>
-                                            <div class="form-group bookNow-element"><label>Company</label><input class="form-control" placeholder="Your Company Name" data-placement="top" data-trigger="manual" data-content="Please enter valid company" type="text"></div>
+                                            <div class="form-group bookNow-element">
+                                                <label>Type of Water Sample</label>
+                                                <input class="form-control required" name="type" placeholder="Enter Sample Type" data-placement="top" data-trigger="manual" data-content=" Please enter valid Type" type="text">
+                                            </div>
+                                            <div class="form-group bookNow-element">
+                                                <label>Name</label>
+                                                <input class="form-control required" name="name" placeholder="Your Name" data-placement="top" data-trigger="manual" data-content="Please enter valid name" type="text">
+                                            </div>
+                                            <div class="form-group bookNow-element">
+                                                <label>Company</label>
+                                                <input class="form-control" name="company" placeholder="Your Company Name" data-placement="top" data-trigger="manual" data-content="Please enter valid company" type="text">
+                                            </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group bookNow-element"><label>Address</label><textarea class="form-control" placeholder="Your Address here.." data-placement="top" data-trigger="manual" rows="2"></textarea></div>
-                                            <div class="form-group bookNow-element"><label>PINCODE</label><input class="form-control " placeholder="000000" data-placement="top" data-trigger="manual" data-content="Must be a valid PIN" type="text"></div>
-                                            <div class="form-group bookNow-element"><label>E-Mail</label><input class="form-control email required" placeholder="Your Email" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text"></div>
-                                            <div class="form-group bookNow-element"><label>Phone</label><input class="form-control phone required" placeholder="000-000-0000" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text"></div>
+                                            <div class="form-group bookNow-element">
+                                                <label>Address</label>
+                                                <textarea class="form-control" name="address" placeholder="Your Address here.." data-placement="top" data-trigger="manual" rows="2"></textarea>
+                                            </div>
+                                            <div class="form-group bookNow-element">
+                                                <label>PINCODE</label>
+                                                <input class="form-control" name="pincode" placeholder="000000" data-placement="top" data-trigger="manual" data-content="Must be a valid PIN" type="text">
+                                            </div>
+                                            <div class="form-group bookNow-element">
+                                                <label>E-Mail</label>
+                                                <input class="form-control email required" name="email" placeholder="Your Email" data-placement="top" data-trigger="manual" data-content="Must be a valid e-mail address (user@gmail.com)" type="text">
+                                            </div>
+                                            <div class="form-group bookNow-element">
+                                                <label>Phone</label>
+                                                <input class="form-control phone required" name="phone" placeholder="000-000-0000" data-placement="top" data-trigger="manual" data-content="Must be a valid phone number (999-999-9999)" type="text">
+                                            </div>
                                             <div class="form-group bookNow-element">
                                                 <div class="radio-group">
                                                     <label class="form-inline">Are you a &nbsp;</label>
                                                     <label class="radio-inline">
-                                                        <input type="radio" name="radioGroup" id="radio1" value="option1">Guest
+                                                        <input type="radio" name="group1" id="radio1" value="guest">Guest
                                                     </label>
                                                     <label class="radio-inline">
-                                                        <input type="radio" name="radioGroup" id="radio2" value="option2"> Registered User
-                                                    </label>                                                    
+                                                        <input type="radio" name="group1" id="radio2" value="user"> Registered User
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
@@ -445,7 +466,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-md-4 col-md-offset-4">
-                                            <div class="form-group"><button type="submit" class="btn btn-success ">Book Now</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
+                                            <div class="form-group"><button type="submit" name="submit" class="btn btn-success ">Book Now</button> <p class="help-block pull-left text-danger hide" id="form-error">&nbsp; The form is not valid. </p></div>
                                         </div>
                                     </div>
                                 </form>

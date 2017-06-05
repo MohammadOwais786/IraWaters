@@ -38,7 +38,7 @@ body{
 }
 .main{
 	text-align:center;
-	background: rgba(255, 255, 255, 0.4);
+	background: rgba(255, 255, 255, 0.1);
 	color:#000;
 	font-weight:bold;
 	margin-top:160px;
@@ -55,7 +55,7 @@ body{
 .main h1{
 	font-size:60px;
 	margin-top:15px;
-	color:#1CD3CB;
+	color:#2c73a7;
 	text-transform:uppercase;
 	font-family: 'Fenix', serif;
 }
@@ -65,51 +65,14 @@ body{
 	line-height:1.6em;
 }
 .main  span.error{
-	color:#48C8D3;
+	color:#f44336;
 	font-size:18px;
 }
 .main p span{
 	font-size:14px;
 	color:#24817A;
 }
-.search{
-	border: 1px solid rgba(173, 173, 173, 0);
-	margin-left:320px;
-	margin-top:20px;
-	width:390px;
-	position:relative;
-    background:rgba(156, 156, 156, 0.12);
-    box-shadow: inset 0px -1px 5px rgba(94, 94, 94, 0.19);
-    border-radius:5px;
-    -webkit-border-radius:5px;
-	-moz-border-radius:5px;
-}
-form input[type="text"]{
-	border:none;
-	outline:none;
-	width:289px;
-	padding:8px;
-	font-size:12px;
-    background:rgba(255, 255, 255, 0);
-   color:#A2A2A2;
-}
-form input[type="submit"]{
-	border:none;
-	background:none;
-	cursor:pointer;
-	padding:10px 20px;
-	font-size:13px;
-	color:#EEE;
-	box-shadow: inset 1px -2px 8px rgba(0, 0, 0, 0.33);
-    margin: 0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background:#174242;
-}
-form input[type="submit"]:hover{
-	box-shadow: inset 0px 0px 4px #222;
-	color:#FFF;
-}
+
 .icons{
 	padding-bottom:20px;
 	text-align:right;
@@ -143,7 +106,7 @@ form input[type="submit"]:hover{
 }
 .footer p{
 	font-size:12px;
-	color:#DDD;
+	color:#000;
 }
 .footer p a{
 	font-size:13px;
