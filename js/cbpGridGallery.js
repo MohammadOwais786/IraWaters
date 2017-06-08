@@ -331,7 +331,7 @@
 
 	// taken from https://github.com/desandro/vanilla-masonry/blob/master/masonry.js by David DeSandro
 	// original debounce by John Hann
-	// http://unscriptable.com/index.html/2009/03/20/debouncing-javascript-methods/
+	// http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
 	CBPGridGallery.prototype._resizeHandler = function() {
 		var self = this;
 		function delayed() {
